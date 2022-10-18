@@ -5,9 +5,6 @@
 * smokiness - from (0-3)
 * heaviness - from (0-3)
 * coastalness - from (0-3)
-* price_range - price range of the whisky (0-3)
-* availability - (1-4), 1-rearest, 4-most common
-* strength_range - the strenth of the whisky (1-2)
 
 Creating clusters using the 'k-means clustering' algorithm. Briefly how k-means clustering works:
 
