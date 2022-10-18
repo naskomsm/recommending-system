@@ -33,7 +33,7 @@ def get_whisky(searched_whisky: str, whisky_names: list):
     return searched_whisky_index, searched_whisky
 
 
-def run_recommender_id(name: str):
+def run_recommender(name: str):
     whisky_data = pd.read_csv(f"{os.getcwd()}/static/whiskys_with_cluster.csv")
     whisky_features = ['smokiness', 'heaviness', 'coastalness']
     whisky_names = whisky_data['whisky_name'].tolist()

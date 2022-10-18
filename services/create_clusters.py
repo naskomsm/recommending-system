@@ -28,7 +28,7 @@ def run_create_clusters():
     # Get the features and distillery names from the data set
     X = whisky[whisky_features]
     labels = whisky[['whisky_name']]
-    OPTIMAL_K = 4 # Change this depenging on the value generated from elbow_method.py
+    OPTIMAL_K = 3 # Change this depenging on the value generated from elbow_method.py
 
     whisky_recommendation, pred = classify_whisky(OPTIMAL_K, X, labels, 0)
 

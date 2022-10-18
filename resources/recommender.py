@@ -1,5 +1,5 @@
 from flask_restful import Resource, reqparse
-
+from services import recommender
 
 class RecommenderResource(Resource):
 
@@ -8,11 +8,13 @@ class RecommenderResource(Resource):
 
         parser.add_argument(
             'whisky_name',
-            type=int,
+            type=str,
             required=True,
-            help=REQURED_FIELD
+            help='This field is required!'
         )
 
         data = parser.parse_args()
-        print(data)
-        return "working", 200
+        whisky_name = data['whisky_name']
+        
+        result = list(recommender.run_recommender(whisky_name))
+        return result, 200
