@@ -8,7 +8,6 @@
 * price_range - price range of the whisky (0-3)
 * availability - (1-4), 1-rearest, 4-most common
 * strength_range - the strenth of the whisky (1-2)
-* bottle_range -
 
 Creating clusters using the 'k-means clustering' algorithm. Briefly how k-means clustering works:
 
@@ -20,3 +19,20 @@ Creating clusters using the 'k-means clustering' algorithm. Briefly how k-means 
 The main problem here is the question - how to determine the optimal number of clusters for k-means clustering? The 'elbow method' is the thing that will help us determine the number of clusters in a data set.
 
 - The method consists of plotting the explained variation as a function of the number of clusters and picking the elbow of the curve as the number of clusters to use.
+
+After creating the clusters we can try and run the project to see what it recommends. Additionally we can apply some filters afterwards.
+
+## 🕵️‍♂️ Try it out
+
+- In root folder create python environment and activate it.
+
+* python3 -m venv env
+* source env/bin/activate
+
+- Afterwards install the requirements.
+
+* pip install -r requirements.txt
+
+- Run the flask application
+
+* python3 api.py

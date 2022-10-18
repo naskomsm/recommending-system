@@ -1,0 +1,12 @@
+Flask
+Flask-RESTful
+pandas
+scikit-learn
+scipy
+matplotlib
+paramiko
+pymodm
+sshtunnel
+pymysql
+seaborn
+plotly==5.10.0
