@@ -34,6 +34,20 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
+- Get the optimal number for clusters
+
+```
+Go inside /services -> python3 elbow_method.py
+This will give you an image showing 'elbow'. The curve of the elbow is the number you want. In our case it will be between 3 and 4. So i will choose 3.
+```
+
+- Create the clusters
+
+```
+Go inside /services -> python3 create_clusters.py
+This will create the clusters and we are ready to go.
+```
+
 - Run the flask application
 
 ```
